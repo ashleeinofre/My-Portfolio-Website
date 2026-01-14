@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
+  <main class="mx-auto max-w-[1552px]">
+  <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)] min-[1552px]:min-h-180">
+    <button class="absolute m-10 top-140 bg-white rounded-full min-[1552px]:top-155" onclick="toggleDarkMode()">
+      <img id="ModeIcon" src="/Images/crescent-moon.png" alt="Mode Button" class="w-12 h-auto object-contain m-2">
+    </button>
+    <div id="content-con" class="mt-27 p-10 max-[1000px]:mt-23 resize-t">
+      <div id="buttons-con" class="flex justify-center gap-9 max-[1200px]:gap-0 resize-t">
+        <img src="../Images/illustration.png" alt="floating-illustration"
+          class="w-[clamp(18rem,40vw,37.5rem)] h-auto object-contain floating m-2 resize-t max-[1000px]:self-center " />
+        <ul class="flex flex-col">
+          <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+            <a href="">About Me</a></li>
+          <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+            <a href="">Resume</a></li>
+          <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+            <a href="">My Skills</a></li>
+          <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+            <a href="">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  max-[1000px]:bottom-135 resize-t dark:bg-[#446C81] min-[1552px]:bottom-176">
+    <div class="flex justify-between items-center p-2">
+      <h1
+        class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none ml-10 mr-2 resize-t dark:text-[white]">
+        FRONT-END DEVELOPER</h1>
+      <div id="icons-con" class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
+        <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
+          <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ashleeinofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/nico.lay.ash.lee/?hl=en" target="_blank" class="icon">
+          <i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/nicoleyashlee.inofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
