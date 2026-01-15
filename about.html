@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Portfolio</title>
+  <link href="src/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
+  <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
+    dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
+    
+
+
+    <!--Main Content Container-->
+    <section class="p-4 mt-40" id="about-section">
+      <div class="m-4 text-justify">
+        <div class="flex justify-center outfit gap-15">
+
+          <div class="card">
+            <div class="banner">
+              <span class="banner-text">WHAT I DO</span>
+              <span class="banner-text">FRONT-END</span>
+            </div>
+            <p class="card__subtitle">I focus on building responsive, user-friendly interfaces that adapt
+              smoothly across different screen
+              sizes.Most of my experience comes from creating and refining personal projects, where I turn designs into
+              clean,functional layouts.</p>
+          </div>
+
+          <div class="card">
+            <div class="banner">
+              <span class="banner-text">HOW I WORK</span>
+              <span class="banner-text">FRONT-END</span>
+            </div>
+            <p class="card__subtitle">I enjoy problem-solving and improving small details that enhance
+              usability. I value clean structure,
+              maintainable code,
+              and layouts that work well in real-world use, not just on one screen size.</p>
+          </div>
+
+          <div class="card">
+            <div class="banner">
+              <span class="banner-text">MY GOALS</span>
+              <span class="banner-text">FRONT-END</span>
+            </div>
+            <p class="card__subtitle">I aim to grow as a front-end developer by working on real-world projects
+              that challenge my skills and
+              improve my
+              understanding of modern interfaces. I am focused on building practical experience while contributing to
+              clean, user-centered designs.</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </section>
+
+  <!--Hero and Icons-->
+  <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
+    <div class="flex justify-between items-center p-2">
+      <a href="">icon</a>
+      <button class=" bg-white rounded-full" onclick="toggleDarkMode()">
+      <img src="../Images/crescent-moon.png" alt="Dark Mode Button" class="w-14 h-auto object-contain p-2 dark:hidden">
+      <img src="../Images/sun.png" alt="Light Mode Button" class="w-14 h-auto object-contain hidden p-2 dark:block">
+    </button>
+      <h1 class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none ml-10 mr-2 resize-t dark:text-[white]">
+        ABOUT ME</h1>
+      <div id="icons-con"
+        class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
+        <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
+          <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ashleeinofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/nico.lay.ash.lee/?hl=en" target="_blank" class="icon">
+          <i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/nicoleyashlee.inofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+  <script src="src/script.js"></script>
+</body>
+</html>

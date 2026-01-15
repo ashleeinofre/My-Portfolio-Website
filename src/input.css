@@ -6,12 +6,19 @@
     .outfit {
       font-family: Outfit;
     }
+
     .icon {
-      font-size: clamp(1.5rem,4vw,4rem);
+      font-size: clamp(1.5rem, 4vw, 4rem);
       text-align: center;
       margin: 0 clamp(4px, 1vw, 8px);
       transition: all 0.1s ease;
     }
+
+    .icon:hover {
+      transform: scale(1.2);
+      color: #ffc21b;
+    }
+
     .button {
       margin: 0.5rem;
       padding: 20px 8vw;
@@ -22,9 +29,133 @@
       font-weight: 600;
       white-space: nowrap;
     }
+
+    .button:hover {
+      transform: translate(-5px, -5px);
+      box-shadow: 17px 17px 0 #0a102a;
+      background-color: #ffc21b;
+      color: white;
+    }
+     
+  /*--------------*/
+.card {
+  width: 320px;
+  padding: 30px;
+  background: #fff;
+  border: 3px solid #0a102a;
+  box-shadow: 10px 10px 0 #0a102a;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card:active {
+  animation: shake 0.5s ease-in-out;
+}
+.card:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 20px 20px 0 #0a102a;
+  background-color: #ffc21b;
+}
+.banner {
+  position: absolute;
+  top: 3px;
+  right: -95px;
+  background: #446C81;
+  color: #fff;
+  padding: 15px;
+  width: 350px;
+  text-align: center;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+.banner-text {
+  display: inline-block;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 100%;
+  position: absolute;
+  left: 13%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner:hover .banner-text:first-child {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.banner:hover .banner-text:last-child {
+  opacity: 1;
+  transform: translateY(-40%);
+}
+.banner-text:last-child {
+  opacity: 0;
+  transform: translateY(60%);
+}
+.banner:hover {
+  background: rgb(255, 255, 255);
+  color:#0a102a;
+}
+.card__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-top:50px;
+  text-align: center;
+}
+
+
+
+
+
+  /*--------------*/
   }
 
-  .resize-t{
+/*------*/
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----*/
+
+  .resize-t {
     transition: all 0.1s ease;
   }
 
@@ -33,37 +164,56 @@
   }
 
   @keyframes float {
-    0%   { transform: translateY(0px); }
-    50%  { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 
+
+
+
+
   @media screen and (max-width: 890px) {
-    #main-con{
+    #main-con {
       margin-top: 35px;
       height: 680px;
     }
+
     #buttons-con {
       flex-direction: column;
     }
-    .button{
+
+    .button {
       padding: 15px;
       width: 250px;
       margin: 3px;
     }
-    #buttons-con ul{
+
+    #buttons-con ul {
       align-items: center;
     }
-    #buttons-con img{
+
+    #buttons-con img {
       margin: 0;
     }
+
     #hero-icons {
       bottom: 665px;
     }
+
     h1 {
       margin-left: 20px;
     }
-    #content-con{
+
+    #content-con {
       margin-top: 55px;
     }
   }

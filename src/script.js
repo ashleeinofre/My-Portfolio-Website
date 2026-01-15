@@ -1,11 +1,19 @@
 function toggleDarkMode() {
   const html = document.documentElement;
-  const icon = document.getElementById("ModeIcon");
+  const isDark = html.classList.toggle("dark");
 
-  html.classList.toggle("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
 
-  icon.src = html.classList.contains("dark")
-    ? "../Images/sun.png"
-    : "../Images/crescent-moon.png";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const html = document.documentElement;
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    html.classList.add("dark");
+  } else {
+    html.classList.remove("dark");
+  }
+});
 
