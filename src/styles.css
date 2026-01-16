@@ -9,10 +9,10 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-black: 900;
     --radius-4xl: 2rem;
-    --default-transition-duration: 150ms;
-    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -175,6 +175,9 @@
   .top-140 {
     top: calc(var(--spacing) * 140);
   }
+  .bottom-60 {
+    bottom: calc(var(--spacing) * 60);
+  }
   .bottom-155 {
     bottom: calc(var(--spacing) * 155);
   }
@@ -205,8 +208,8 @@
   .mt-27 {
     margin-top: calc(var(--spacing) * 27);
   }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
+  .mt-35 {
+    margin-top: calc(var(--spacing) * 35);
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -219,6 +222,9 @@
   }
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
   }
   .flex {
     display: flex;
@@ -238,17 +244,14 @@
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
-  .w-14 {
-    width: calc(var(--spacing) * 14);
+  .w-17 {
+    width: calc(var(--spacing) * 17);
   }
   .w-\[clamp\(18rem\,40vw\,37\.5rem\)\] {
     width: clamp(18rem, 40vw, 37.5rem);
   }
   .grow {
     flex-grow: 1;
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .flex-col {
     flex-direction: column;
@@ -261,6 +264,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
   }
   .gap-9 {
     gap: calc(var(--spacing) * 9);
@@ -280,13 +286,6 @@
   .rounded-\[clamp\(25px\,2\.5vw\,50px\)\] {
     border-radius: clamp(25px, 2.5vw, 50px);
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-3 {
     border-style: var(--tw-border-style);
     border-width: 3px;
@@ -297,6 +296,9 @@
   }
   .border-\[\#0B0D2A\] {
     border-color: #0B0D2A;
+  }
+  .bg-\[\#446C81\] {
+    background-color: #446C81;
   }
   .bg-\[\#BDC7FF\] {
     background-color: #BDC7FF;
@@ -325,6 +327,10 @@
   .text-justify {
     text-align: justify;
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-\[clamp\(1\.2rem\,4\.5vw\,6rem\)\] {
     font-size: clamp(1.2rem, 4.5vw, 6rem);
   }
@@ -342,14 +348,26 @@
   .text-\[\#446C81\] {
     color: #446C81;
   }
+  .text-white {
+    color: var(--color-white);
+  }
   .shadow-\[0_0_10px_15px_rgba\(0\,0\,0\,0\.25\)\] {
     --tw-shadow: 0 0 10px 15px var(--tw-shadow-color, rgba(0,0,0,0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  .hover\:scale-\[1\.1\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.1;
+      }
+    }
+  }
+  .hover\:scale-\[1\.2\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.2;
+      }
+    }
   }
   .max-\[1200px\]\:gap-0 {
     @media (width < 1200px) {
@@ -406,9 +424,29 @@
       background-color: #446C81;
     }
   }
+  .dark\:bg-\[rgb\(11\,13\,42\)\] {
+    &:where(.dark, .dark *) {
+      background-color: rgb(11,13,42);
+    }
+  }
+  .dark\:bg-white {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-white);
+    }
+  }
+  .dark\:text-\[\#0B0D2A\] {
+    &:where(.dark, .dark *) {
+      color: #0B0D2A;
+    }
+  }
   .dark\:text-\[white\] {
     &:where(.dark, .dark *) {
       color: white;
+    }
+  }
+  .dark\:text-white {
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
     }
   }
   .dark\:shadow-\[0_0_10px_15px_rgba\(255\,255\,255\,0\.25\)\] {
@@ -431,6 +469,13 @@
   }
 }
 @layer utilities {
+  .page {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .page.show {
+    opacity: 1;
+  }
   .outfit {
     font-family: Outfit;
   }
@@ -459,6 +504,28 @@
     box-shadow: 17px 17px 0 #0a102a;
     background-color: #ffc21b;
     color: white;
+  }
+  .button .hover-t {
+    display: none;
+    font-size: 2vw;
+  }
+  .button:hover .default-t {
+    display: none;
+  }
+  .button:hover .hover-t {
+    display: inline;
+  }
+  .modal {
+    position: fixed;
+    border-radius: 30px;
+    border: solid 2px #0a102a;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal.open {
+    opacity: 1;
+    pointer-events: auto;
   }
   .card {
     width: 320px;
@@ -520,7 +587,7 @@
     color: #0a102a;
   }
   .card__subtitle {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     color: #333;
     margin-top: 50px;
@@ -589,26 +656,6 @@
   #content-con {
     margin-top: 55px;
   }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -691,11 +738,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
