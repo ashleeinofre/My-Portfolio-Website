@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Portfolio</title>
+  <link href="src/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+    <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
+          <!--Main Content Container-->
+        <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
+    dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
+    <div class="p-4 mt-35">  
+        <ul>
+            <li><a href="#">
+                <video src="./Videos/testvideo.mp4"></video>
+                <p>Mini Task Manager</p>
+            </a></li>
+        </ul>
+
+
+
+
+
+    </div>
+  </section>
+
+
+        <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
+    <div class="flex justify-between items-center p-2">
+      <div class="ml-10 flex gap-5">
+        <!----MOdal-->
+        <button class="icon text-[#446C81] dark:text-white" id="openmodal">
+          <i class="fa-solid fa-list"></i></button>
+
+
+        <div class="modal bg-[#446C81] dark:bg-white" id="modal">
+          <div id="modal-con" class="flex justify-center p-10 resize-t items-center">
+            <ul class="flex flex-col">
+              <li
+                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+                <a href="index.html">Home</a>
+              </li>
+              <li
+                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+                <a href="about.html">About Me</a>
+              </li>
+              <li
+                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
+                <a href="skills.html">My skills</a>
+              </li>
+              <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]
+             type1">
+                <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download>
+                  <span class="default-t">Resume</span>
+                  <span class="hover-t">Download</span>
+                </a>
+              </li>
+            </ul>
+            <button id="closemodal"
+              class="relative bottom-60 text-3xl text-white hover:scale-[1.1] dark:text-[#0B0D2A]">x</button>
+          </div>
+        </div>
+        <!----MOdal-->
+        <button class="hover:scale-[1.2]" onclick="toggleDarkMode()">
+          <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
+            class="w-17 h-auto object-contain p-2 dark:hidden">
+          <img src="./Images/sun.png" alt="Light Mode Button" class="w-17 h-auto object-contain hidden p-2 dark:block">
+        </button>
+      </div>
+      <h1
+        class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none ml-20 resize-t dark:text-[white]">
+        PROJECTS</h1>
+      <div id="icons-con"
+        class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
+        <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
+          <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ashleeinofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/nico.lay.ash.lee/?hl=en" target="_blank" class="icon">
+          <i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/nicoleyashlee.inofre" target="_blank" class="icon">
+          <i class="fa-brands fa-square-facebook"></i></a>
+      </div>
+    </div>
+  </section>
+  <script src="src/script.js"></script>
+
+</body>
+</html>
