@@ -18,7 +18,7 @@
     }
 
     .icon {
-      font-size: clamp(1.5rem, 4vw, 4rem);
+      font-size: clamp(1.8rem, 4vw, 4rem);
       text-align: center;
       margin: 0 clamp(4px, 1vw, 8px);
       transition: all 0.1s ease;
@@ -29,8 +29,16 @@
       color: #ffc21b;
     }
 
+    .desktop-only {
+      display: flex;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
     .button {
-      margin: 0.5rem;
+      display: block;
       padding: 20px 8vw;
       text-align: center;
       border: solid 2px #0B0D2A;
@@ -38,89 +46,49 @@
       box-shadow: 7px 3px 0px #0B0D2A;
       font-weight: 600;
       white-space: nowrap;
+      border-radius: 32px;
     }
 
     .button:hover {
       transform: translate(-5px, -5px);
-      box-shadow: 17px 17px 0 #0a102a;
+      box-shadow: 17px 17px 0 #0B0D2A;
       background-color: #ffc21b;
       color: white;
 
     }
 
-    .button .hover-t {
+    .button .hover-resume {
       display: none;
       font-size: 2vw;
     }
 
-    .button:hover .default-t {
+    .button:hover .default-resume {
       display: none;
     }
 
-    .button:hover .hover-t {
+    .button:hover .hover-resume {
       display: inline;
     }
 
-    .modal {
-      position: fixed;
-      border-radius: 30px;
-      border: solid 2px #0a102a;
-      transition: all 0.3s ease-in-out;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .modal.open {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .card {
+    .abtcard {
       width: 320px;
       padding: 30px;
       background: #fff;
-      border: 3px solid #0a102a;
-      box-shadow: 10px 10px 0 #0a102a;
+      border: 3px solid #0B0D2A;
+      box-shadow: 10px 10px 0 #0B0D2A;
       transform: rotate(-2deg);
       transition: all 0.3s ease;
       overflow: hidden;
     }
 
-    .card:active {
+    .abtard:active {
       animation: shake 0.5s ease-in-out;
     }
 
-    .card:hover {
+    .abtcard:hover {
       transform: rotate(0deg) scale(1.02);
-      box-shadow: 20px 20px 0 #0a102a;
+      box-shadow: 20px 20px 0 #0B0D2A;
       background-color: #ffc21b;
-    }
-
-    .banner {
-      position: absolute;
-      top: 3px;
-      right: -95px;
-      background: #446C81;
-      color: #fff;
-      padding: 15px;
-      width: 350px;
-      text-align: center;
-      transform: rotate(45deg);
-      font-weight: bold;
-      font-size: 18px;
-      letter-spacing: 2px;
-      overflow: hidden;
-      transition: background 0.5s ease;
-    }
-
-    .banner-text {
-      display: inline-block;
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      width: 100%;
-      position: absolute;
-      left: 13%;
-      top: 50%;
-      transform: translateY(-50%);
     }
 
     .banner:hover .banner-text:first-child {
@@ -140,15 +108,7 @@
 
     .banner:hover {
       background: rgb(255, 255, 255);
-      color: #0a102a;
-    }
-
-    .card__subtitle {
-      font-size: 20px;
-      font-weight: 500;
-      color: #333;
-      margin-top: 50px;
-      text-align: center;
+      color: #0B0D2A;
     }
 
     .swiper {
@@ -170,6 +130,20 @@
 
     .s-card:hover .card-content {
       transform: translateY(0);
+    }
+
+    .modal {
+      position: fixed;
+      border-radius: 30px;
+      border: solid 2px #0B0D2A;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .modal.open {
+      opacity: 1;
+      pointer-events: auto;
     }
   }
 
@@ -200,7 +174,7 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    color: #0a102a;
+    color: #0B0D2A;
   }
 
   .cubic-t {
@@ -208,7 +182,7 @@
   }
 
   .resize-t {
-    transition: all 0.1s ease;
+    transition: all 0.1s ease-in-out;
   }
 
   .floating {
@@ -230,17 +204,63 @@
   }
 
 
+  @media screen and (max-width: 1000px) {
+    #main-con {
+      height: 580px;
+    }
 
+    #hero-icons {
+      bottom: 560px;
+    }
+
+    .dark-light {
+      top: 500px;
+    }
+
+    .home-b {
+      border-radius: 25px;
+    }
+
+    .modal-con li {
+      border-radius: 25px;
+    }
+
+    .in-con {
+      margin-top: 92px;
+    }
+
+    .in-con img {
+      align-self: center;
+    }
+  }
 
 
   @media screen and (max-width: 890px) {
+
+    /* Landing */
     #main-con {
       margin-top: 35px;
       height: 680px;
     }
 
-    #buttons-con {
+    #hero-icons {
+      bottom: 665px;
+    }
+
+    .in-con {
+      margin-top: 60px;
+    }
+
+    .in-con div {
       flex-direction: column;
+    }
+
+    .in-con ul {
+      align-items: center;
+    }
+
+    .in-con img {
+      margin: 0;
     }
 
     .button {
@@ -249,23 +269,77 @@
       margin: 3px;
     }
 
-    #buttons-con ul {
-      align-items: center;
-    }
-
-    #buttons-con img {
-      margin: 0;
-    }
-
-    #hero-icons {
-      bottom: 665px;
+    .button-con {
+      gap: 1px;
     }
 
     h1 {
       margin-left: 20px;
     }
 
-    #content-con {
-      margin-top: 55px;
+    .dark-light {
+      top: 580px;
+    }
+
+    .dark-light img {
+      width: 40px;
+    }
+
+    /* About */
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    /* Landing */
+    #main-con {
+      margin-top: 20px;
+      height: 700px;
+    }
+
+    #hero-icons {
+      bottom: 685px;
+    }
+
+    #hero-icons .hero {
+      display: flex;
+      margin-left: 25px;
+      margin-right: 25px;
+      gap: 0;
+    }
+
+    #hero-icons .hero h1 {
+      text-align: center;
+    }
+
+    .in-con {
+      margin-top: 40px;
+      padding-bottom: 10px;
+    }
+
+    .button-con {
+      gap: 5px;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    .mobile-only {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .dark-light img {
+      width: 30px;
+    }
+
+    .button:hover .hover-resume {
+      display: none;
+    }
+
+    .button:hover .default-resume {
+      display: inline;
     }
   }

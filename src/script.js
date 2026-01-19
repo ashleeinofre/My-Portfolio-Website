@@ -19,54 +19,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const openBtn = document.getElementById("openmodal");
-const closeBtn = document.getElementById("closemodal");
-const modal = document.getElementById("modal");
 
-openBtn.addEventListener("click", () => {
-  modal.classList.add("open");
-});
+document.addEventListener("DOMContentLoaded", function () {
+    if (innerWidth > 768) return;
 
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("open");
-});
+    const btn = document.getElementById("resume-btn");
+    if (!btn) return;
 
-function closeModal() {
-  modal.classList.remove("open");
-}
+    const a = btn.querySelector("a");
+    const d = btn.querySelector(".default-resume");
+    const h = btn.querySelector(".hover-resume");
+    const href = a.getAttribute("href");
 
-document.querySelectorAll("#modal a").forEach(link => {
-  link.addEventListener("click", () => {
-    closeModal();
+    let active = false, t;
+
+    a.removeAttribute("href");
+    a.removeAttribute("download");
+
+    a.onclick = function (e) {
+      if (!active) {
+        e.preventDefault();
+        active = true;
+
+        d.style.display = "none";
+        h.style.display = "inline";
+        a.setAttribute("href", href);
+        a.setAttribute("download", "");
+
+        t = setTimeout(function () {
+          active = false;
+          h.style.display = "none";
+          d.style.display = "inline";
+          a.removeAttribute("href");
+          a.removeAttribute("download");
+        }, 2500);
+      } else {
+        clearTimeout(t);
+        setTimeout(function () {
+          active = false;
+          h.style.display = "none";
+          d.style.display = "inline";
+          a.removeAttribute("href");
+          a.removeAttribute("download");
+        }, 300);
+      }
+    };
   });
-});
-
-
-
-
-
-new Swiper(".swiper", {
-  loop: true,
-  spaceBetween: 30,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    },
-  }
-});

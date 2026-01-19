@@ -2,39 +2,35 @@
 
 Final Portfolio Website Design
 This Website is created using HTML5, Tailwind CSS + custom styles(CSS3), & JavaScript.
-Illustration is drawn and designed by the author.
+Illustration is drawn and designed by Ashlee Inofre.
 
-Icons are from:
-Fonts are from:
+![alt text](/Images/image.png)
 
-Text Size:
-//HERO - 72px
-
+Icons are from: Devicon & Font-Awesome
+Fonts are from: Google Fonts
+proj-card: Template from Uiverse.io by Yaya12085 - modified and integrated by Ashlee Inofre
+about me cards: Template from Uiverse.io by 0xNihilist - modified and customized by Ashlee Inofre
 
 
 COLOR PALLETTE:
 //LIGHT MODE
-Body & Buttons: White #FFFFFF
-Background, Text & Icons: #446C81
-Border: #0B0D2A
-Shadows: Black #000000 25%, #0B0D2A
+#446C81
+#FFFFFF
+#0B0D2A
+#BDC7FF
+#364153
+#FFC21B
+
 
 //DARK MODE
-Body: #0B0D2A
-Text & Icons: #FEFFDA
-Background: #BDC7FF
-Buttons: #446C81
-Shadows: Black #000000 25%, #0B0D2A
+#446C81
+#FFFFFF
+#0B0D2A
+#FFC21B
+
 
 SCREEN BREAKPOINTS:
 Mobile: 425px
 Tablets: 768px, 890px
 Laptop: 1200px
 Desktop: 1440px, 1990px
-
-All colors:
-#FFFFFF
-#446C81
-#0B0D2A
-#FEFFDA
-#BDC7FF

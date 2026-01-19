@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,64 +9,116 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-    <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
-          <!--Main Content Container-->
-        <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+
+<body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
+  <!--Main Content Box-->
+  <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160  
     shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
     dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
-    <div class="p-4 mt-35">  
-        <ul>
-            <li><a href="#">
-                <video src="./Videos/testvideo.mp4"></video>
-                <p>Mini Task Manager</p>
-            </a></li>
-        </ul>
+    <!--Main Content-->
+    <ul class="p-4 mt-45 flex felx-col justify-center items-center">
 
+      <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
+        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
+          <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
+            class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
+        </div>
+        <div class="p-6">
+          <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            To-Do List </h5>
+          <p class="block text-base font-light leading-relaxed text-inherit antialiased">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.</p>
+        </div>
+        <div class="p-6 pt-0 mx-auto my-0">
+          <button type="button"
+            class="rounded-lg bg-[#446C81] py-3 px-6 text-center text-xs font-bold uppercase text-white shadow-md 
+              shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 border-2 border-[#0B0D2A] dark:hover:shadow-white dark:bg-white dark:text-[#446C81]">
+            View Project
+          </button>
+        </div>
+      </li>
 
+      <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
+        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
+          <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
+            class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
+        </div>
+        <div class="p-6">
+          <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            One-Page Site Template</h5>
+          <p class="block text-base font-light leading-relaxed text-inherit antialiased">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.</p>
+        </div>
+        <div class="p-6 pt-0 mx-auto my-0">
+          <button type="button"
+            class="rounded-lg bg-[#446C81] py-3 px-6 text-center text-xs font-bold uppercase text-white shadow-md 
+              shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 border-2 border-[#0B0D2A] dark:hover:shadow-white dark:bg-white dark:text-[#446C81]">
+            View Project
+          </button>
+        </div>
+      </li>
 
-
-
-    </div>
+      <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
+        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
+          <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
+            class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
+        </div>
+        <div class="p-6">
+          <h5 class="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            Portfolio Figma UI/UX Design</h5>
+          <p class="leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.</p>
+        </div>
+        <div class="p-6 pt-0 mx-auto my-0">
+          <button type="button"
+            class="rounded-lg bg-[#446C81] py-3 px-6 text-center text-xs font-bold uppercase text-white 
+          shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 border-2 border-[#0B0D2A] dark:hover:shadow-white dark:bg-white dark:text-[#446C81]">
+            View Project
+          </button>
+        </div>
+      </li>
+    </ul>
   </section>
 
 
-        <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  <section class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
   max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
     <div class="flex justify-between items-center p-2">
       <div class="ml-10 flex gap-5">
-        <!----MOdal-->
+        <!-- Modal -->
         <button class="icon text-[#446C81] dark:text-white" id="openmodal">
           <i class="fa-solid fa-list"></i></button>
-
-
-        <div class="modal bg-[#446C81] dark:bg-white" id="modal">
-          <div id="modal-con" class="flex justify-center p-10 resize-t items-center">
-            <ul class="flex flex-col">
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="index.html">Home</a>
+        <div class="modal bg-white dark:bg-[#446C81] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
+          <div class="modal-con flex justify-center p-5 pt-10 resize-t items-center">
+            <ul class="button-con flex flex-col gap-3.5">
+              <li>
+                <a href="about.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
               </li>
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="about.html">About Me</a>
+              <li>
+                <a href="skills.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">My Skills</a>
               </li>
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="skills.html">My skills</a>
+              <li>
+                <a href="projects.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Projects</a>
               </li>
-              <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]
-             type1">
-                <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download>
-                  <span class="default-t">Resume</span>
-                  <span class="hover-t">Download</span>
+              <li id="resume-btn">
+                <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">
+                  <span class="default-resume">Resume</span>
+                  <span class="hover-resume">Download</span>
                 </a>
               </li>
             </ul>
             <button id="closemodal"
-              class="relative bottom-60 text-3xl text-white hover:scale-[1.1] dark:text-[#0B0D2A]">x</button>
+              class="relative bottom-60 text-3xl text-[#0B0D2A] hover:scale-[1.1] dark:text-white">x</button>
           </div>
         </div>
-        <!----MOdal-->
+        <!-- Dark Mode -->
         <button class="hover:scale-[1.2]" onclick="toggleDarkMode()">
           <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
             class="w-17 h-auto object-contain p-2 dark:hidden">
@@ -89,6 +142,9 @@
     </div>
   </section>
   <script src="src/script.js"></script>
+  <script src="src/page_scripts/modal.js"></script>
+  <script src="src/page_scripts/projects.js"></script>
 
 </body>
+
 </html>

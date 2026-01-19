@@ -11,45 +11,56 @@
 </head>
 
 <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
+  <!--Main Content Box-->
   <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
     shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
     dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
 
-
-
-    <!--Main Content Container-->
+    <!--Main Content-->
     <div class="p-4 mt-35" id="about-section">
       <div class="m-4 text-justify">
         <div class="flex justify-center outfit gap-15">
 
-          <div class="card">
-            <div class="banner">
-              <span class="banner-text">WHAT I DO</span>
-              <span class="banner-text">FRONT-END</span>
+          <div class="abtcard">
+            <div class="banner absolute top-0.75 -right-23.75 bg-[#446C81] text-white p-3.75 w-87.5 text-center transform-[rotate(45deg)] 
+            font-bold text-[18px] tracking-[2px] overflow-hidden transition-[background_0.5s_ease]">
+
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">WHAT I DO</span>
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">FRONT-END</span>
             </div>
-            <p class="card__subtitle">I focus on building responsive, user-friendly interfaces that adapt
-              smoothly across different screen
-              sizes.Most of my experience comes from creating and refining personal projects, where I turn designs into
-              clean,functional layouts.</p>
+            <p class="text-[20px] font-medium text-[#333] mt-12.5 text-center">I focus on building responsive,
+              user-friendly interfaces that adapt
+              smoothly across different screen sizes.Most of my experience comes from creating and refining personal
+              projects, where I turn designs into clean,functional layouts.</p>
           </div>
 
-          <div class="card">
-            <div class="banner">
-              <span class="banner-text">HOW I WORK</span>
-              <span class="banner-text">FRONT-END</span>
+          <div class="abtcard">
+            <div class="banner absolute top-0.75 -right-23.75 bg-[#446C81] text-white p-3.75 w-87.5 text-center transform-[rotate(45deg)] 
+            font-bold text-[18px] tracking-[2px] overflow-hidden transition-[background_0.5s_ease]">
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">HOW I WORK</span>
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">FRONT-END</span>
             </div>
-            <p class="card__subtitle">I enjoy problem-solving and improving small details that enhance
+            <p class="text-[20px] font-medium text-[#333] mt-12.5 text-center">I enjoy problem-solving and improving
+              small details that enhance
               usability. I value clean structure,
               maintainable code,
               and layouts that work well in real-world use, not just on one screen size.</p>
           </div>
 
-          <div class="card">
-            <div class="banner">
-              <span class="banner-text">MY GOALS</span>
-              <span class="banner-text">FRONT-END</span>
+          <div class="abtcard">
+            <div class="banner absolute top-0.75 -right-23.75 bg-[#446C81] text-white p-3.75 w-87.5 text-center transform-[rotate(45deg)] 
+            font-bold text-[18px] tracking-[2px] overflow-hidden transition-[background_0.5s_ease]">
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">MY GOALS</span>
+              <span class="banner-text inline-block w-full absolute left-[13%] top-[50%] 
+              transform-[translateY(-50%)] transition-[opacity_0.5s_ease,transform_0.5s_ease]">FRONT-END</span>
             </div>
-            <p class="card__subtitle">I aim to grow as a front-end developer by working on real-world projects
+            <p class="text-[20px] font-medium text-[#333] mt-12.5 text-center">I aim to grow as a front-end developer by
+              working on real-world projects
               that challenge my skills and improve my understanding of modern interfaces. I am focused on building
               practical experience while contributing to
               clean, user-centered designs.</p>
@@ -57,40 +68,38 @@
         </div>
 
       </div>
-      </div>
+    </div>
     </div>
   </section>
 
-  <!--Hero and Icons-->
+  <!--Hero & Icons-->
   <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
   max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
     <div class="flex justify-between items-center p-2">
       <div class="ml-10 flex gap-5">
-        <!----MOdal-->
+        <!-- Modal -->
         <button class="icon text-[#446C81] dark:text-white" id="openmodal">
           <i class="fa-solid fa-list"></i></button>
-
-
-        <div class="modal bg-white dark:bg-[#446C81]" id="modal">
-          <div id="modal-con" class="flex justify-center p-10 resize-t items-center">
-            <ul class="flex flex-col">
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="index.html">Home</a>
+        <div class="modal bg-white dark:bg-[#446C81] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
+          <div id="modal-con" class="flex justify-center p-5 pt-10 resize-t items-center">
+            <ul class="button-con flex flex-col gap-3.5">
+              <li>
+                <a href="about.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
               </li>
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="skills.html">My Skills</a>
+              <li>
+                <a href="skills.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">My Skills</a>
               </li>
-              <li
-                class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]">
-                <a href="projects.html">Projects</a>
+              <li>
+                <a href="projects.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Projects</a>
               </li>
-              <li class="button text-[#446C81] bg-white rounded-4xl max-[1000px]:rounded-[25px] resize-t dark:bg-[#446C81] dark:text-[white]
-             type1">
-                <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download>
-                  <span class="default-t">Resume</span>
-                  <span class="hover-t">Download</span>
+              <li id="resume-btn">
+                <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">
+                  <span class="default-resume">Resume</span>
+                  <span class="hover-resume">Download</span>
                 </a>
               </li>
             </ul>
@@ -98,7 +107,7 @@
               class="relative bottom-60 text-3xl text-[#0B0D2A] hover:scale-[1.1] dark:text-white">x</button>
           </div>
         </div>
-        <!----MOdal-->
+        <!-- Dark Mode -->
         <button class="hover:scale-[1.2]" onclick="toggleDarkMode()">
           <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
             class="w-17 h-auto object-contain p-2 dark:hidden">
@@ -121,6 +130,7 @@
       </div>
     </div>
   </section>
+  <script src="src/page_scripts/modal.js"></script>
   <script src="src/script.js"></script>
 </body>
 
