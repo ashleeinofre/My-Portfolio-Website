@@ -86,13 +86,13 @@
   <!-- Title & Icons -->
   <section class="hero-icons bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
   max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
-    <div class="flex justify-between items-center p-2">
-      <div class="ml-10 flex gap-5">
-        <!-- Modal -->
+    <div class="flex justify-between items-center resize-t">
+      <!-- Modal -->
+      <div class="modal-dark ml-10 flex gap-5 max-[880px]:ml-5">
         <button class="icon text-[#446C81] dark:text-white" id="openmodal">
           <i class="fa-solid fa-list"></i></button>
         <div class="modal bg-white dark:bg-[#446C81] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
-          <div class="modal-con flex justify-center p-5 pt-10 resize-t items-center">
+          <div id="modal-con" class="flex justify-center p-5 pt-10 resize-t items-center">
             <ul class="button-con flex flex-col gap-3.5">
               <li>
                 <a href="index.html"
@@ -103,8 +103,8 @@
                   class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">My Skills</a>
               </li>
               <li>
-                <a href="about.html"
-                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
+                <a href="projects.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Projects</a>
               </li>
               <li id="resume-btn">
                 <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download
@@ -119,18 +119,16 @@
           </div>
         </div>
         <!-- Dark Mode -->
-        <button class="hover:scale-[1.1]" onclick="toggleDarkMode()">
-          <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
-            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain p-2 dark:hidden">
-          <img src="./Images/sun.png" alt="Light Mode Button"
-            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain hidden p-2 dark:block">
-        </button>
+        <button class="dark-light-pages hover:scale-[1.2] resize-t" onclick="toggleDarkMode()">
+        <img src="./Images/crescent-moon.png" alt="Dark Mode Button" class="w-12 h-auto object-contain m-2 dark:hidden">
+        <img src="./Images/sun.png" alt="Light Mode Button" class="w-12 h-auto object-contain m-2 hidden dark:block">
+      </button>
       </div>
       <!-- Hero -->
       <div class="pages-hero ml-20 resize-t">
         <h1
           class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none resize-t dark:text-[white] resize-t">
-          Projects</h1>
+          PROJECTS</h1>
       </div>
       <div class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
         <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">

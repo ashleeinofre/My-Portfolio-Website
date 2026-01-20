@@ -217,6 +217,10 @@
       bottom: 620px;
     }
 
+    .dark-light-pages {
+      width: 35px;
+    }
+
   }
 
   @media screen and (max-width: 890px) {
@@ -358,12 +362,16 @@
 
     /* About */
     .pages-hero {
-      margin-left: 0px;
+      margin-left: 10px;
     }
     
      .modal-dark {
       gap : 0;
      }
+
+     .dark-light-pages {
+      width: 25px;
+    }
     
   }
 
@@ -393,6 +401,5 @@
     }
 
     /* About */
-
 
   }
