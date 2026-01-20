@@ -20,7 +20,7 @@
     .icon {
       font-size: clamp(1.8rem, 4vw, 4rem);
       text-align: center;
-      margin: 0 clamp(4px, 1vw, 8px);
+      margin: clamp(4px, 1vw, 8px);
       transition: all 0.1s ease;
     }
 
@@ -73,22 +73,11 @@
     .abtcard {
       width: 320px;
       padding: 30px;
-      background: #fff;
       border: 3px solid #0B0D2A;
       box-shadow: 10px 10px 0 #0B0D2A;
       transform: rotate(-2deg);
       transition: all 0.3s ease;
       overflow: hidden;
-    }
-
-    .abtard:active {
-      animation: shake 0.5s ease-in-out;
-    }
-
-    .abtcard:hover {
-      transform: rotate(0deg) scale(1.02);
-      box-shadow: 20px 20px 0 #0B0D2A;
-      background-color: #ffc21b;
     }
 
     .banner:hover .banner-text:first-child {
@@ -147,30 +136,18 @@
     }
   }
 
-
-
-  @keyframes shake {
-    0% {
-      transform: translateX(0);
-    }
-
-    25% {
-      transform: translateX(-5px);
-    }
-
-    50% {
-      transform: translateX(5px);
-    }
-
-    75% {
-      transform: translateX(-5px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
+  .only-thumb::-webkit-scrollbar {
+    width: 6px;
   }
 
+  .only-thumb::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .only-thumb::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 9999px;
+  }
 
   .swiper-button-prev,
   .swiper-button-next {
@@ -203,16 +180,17 @@
     }
   }
 
-
   @media screen and (max-width: 1000px) {
-   .main-con {
-    height: 600px;
-   }
+    /* All Pages */
+    .main-con {
+      height: 600px;
+    }
 
     .hero-icons {
       bottom: 585px;
     }
 
+      /* Landing */
     .dark-light {
       top: 500px;
     }
@@ -232,12 +210,18 @@
     .in-con img {
       align-self: center;
     }
-  }
 
+    /* About */
+
+    .hero-icons-about {
+      bottom: 620px;
+    }
+
+  }
 
   @media screen and (max-width: 890px) {
 
-    /* Landing */
+    /* All Pages */
     .main-con {
       margin-top: 35px;
       height: 680px;
@@ -246,8 +230,16 @@
     .hero-icons {
       bottom: 665px;
     }
-    
 
+    .hero-icons div {
+      padding: 4px;
+    }
+
+    .icon {
+      margin: 4px;
+    }
+
+    /* Landing */
     .in-con {
       margin-top: 60px;
     }
@@ -264,7 +256,7 @@
       margin: 0;
     }
 
-    
+
     .button {
       padding: 15px;
       width: 250px;
@@ -276,10 +268,6 @@
       gap: 1px;
     }
 
-    h1 {
-      margin-left: 20px;
-    }
-
     .dark-light {
       top: 580px;
     }
@@ -289,26 +277,40 @@
     }
 
     /* About */
-  }
 
+    .in-con-pages {
+      margin-top: 100px;
+    }
+
+    .pages-hero {
+      margin-left: 20px;
+    }
+  }
 
   @media screen and (max-width: 768px) {
 
-    /* Landing */
+    /* All Pages */
     .main-con {
-      margin-top: 20px;
+      margin-top: 30px;
       height: 700px;
+      border: solid 2px #0B0D2A;
+      margin-left: 50px;
+      margin-right: 50px;
     }
 
     .hero-icons {
       bottom: 685px;
+      border: solid 2px #0B0D2A;
+      margin-left: 20px;
+      margin-right: 20px;
     }
-
+    /* Landing */
     .hero-icons .hero {
       display: flex;
-      margin-left: 25px;
-      margin-right: 25px;
+      margin-left: 10px;
+      margin-right: 30px;
       gap: 0;
+      padding: 10px;
     }
 
     .hero-icons .hero h1 {
@@ -316,11 +318,16 @@
     }
 
     .in-con {
-      padding-bottom: 10px;
+      margin-top: 55px;
+      padding-bottom: 0;
     }
 
     .button-con {
-      gap: 5px;
+      gap: 3px;
+    }
+
+    .button {
+      font-size: 3vw;
     }
 
     .desktop-only {
@@ -344,21 +351,48 @@
     .button:hover .default-resume {
       display: inline;
     }
-  }
 
-
- @media screen and (max-width: 425px) {
-  /* Landing */
-  .main-con {
-      height: 650px;
+    .button:hover {
+      box-shadow: 5px 8px 0 #0B0D2A;
     }
 
-  .button {
-    border-radius: 18px;
+    /* About */
+    .pages-hero {
+      margin-left: 0px;
+    }
+    
+     .modal-dark {
+      gap : 0;
+     }
+    
   }
 
-  .hero-icons {
-    bottom: 635px;
+  @media screen and (max-width: 425px) {
+
+    /* Landing */
+    .main-con {
+      height: 650px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .button-con {
+      gap: 7px;
+    }
+    .button {
+      border-radius: 18px;
+    }
+
+    .hero-icons {
+      bottom: 635px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .dark-light img {
+      width: 20px;
+    }
+
+    /* About */
+
+
   }
- }
-  

@@ -12,14 +12,14 @@
 
 <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
   <!--Main Content Box-->
-  <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160  
-    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
-    dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
-    <!--Main Content-->
-    <ul class="p-4 mt-45 flex felx-col justify-center items-center">
+  <section
+    class="main-con bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] resize-t dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)] overflow-auto only-thumb">
+  <!--Main Content-->
+    <ul class="in-con-pages p-4 mt-35 flex felx-col flex-wrap justify-center items-center">
 
       <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
-        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        border-2 border-[#0B0D2A] mx-6 mt-15 dark:bg-[#446C81] dark:text-white">
         <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
           <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
             class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
@@ -40,7 +40,7 @@
       </li>
 
       <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
-        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        border-2 border-[#0B0D2A] mx-6 mt-15 dark:bg-[#446C81] dark:text-white">
         <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
           <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
             class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
@@ -61,7 +61,7 @@
       </li>
 
       <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
-        border-2 border-[#0B0D2A] mx-6 dark:bg-[#446C81] dark:text-white">
+        border-2 border-[#0B0D2A] mx-6 mt-15 dark:bg-[#446C81] dark:text-white">
         <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
           <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
             class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
@@ -83,8 +83,8 @@
     </ul>
   </section>
 
-
-  <section class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  <!-- Title & Icons -->
+  <section class="hero-icons bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
   max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
     <div class="flex justify-between items-center p-2">
       <div class="ml-10 flex gap-5">
@@ -95,16 +95,16 @@
           <div class="modal-con flex justify-center p-5 pt-10 resize-t items-center">
             <ul class="button-con flex flex-col gap-3.5">
               <li>
-                <a href="about.html"
-                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
+                <a href="index.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Home</a>
               </li>
               <li>
                 <a href="skills.html"
                   class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">My Skills</a>
               </li>
               <li>
-                <a href="projects.html"
-                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Projects</a>
+                <a href="about.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
               </li>
               <li id="resume-btn">
                 <a href="./Resume/Resume-NicoleyAshleeInofre.pdf" download
@@ -119,17 +119,20 @@
           </div>
         </div>
         <!-- Dark Mode -->
-        <button class="hover:scale-[1.2]" onclick="toggleDarkMode()">
+        <button class="hover:scale-[1.1]" onclick="toggleDarkMode()">
           <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
-            class="w-17 h-auto object-contain p-2 dark:hidden">
-          <img src="./Images/sun.png" alt="Light Mode Button" class="w-17 h-auto object-contain hidden p-2 dark:block">
+            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain p-2 dark:hidden">
+          <img src="./Images/sun.png" alt="Light Mode Button"
+            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain hidden p-2 dark:block">
         </button>
       </div>
-      <h1
-        class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none ml-20 resize-t dark:text-[white]">
-        PROJECTS</h1>
-      <div id="icons-con"
-        class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
+      <!-- Hero -->
+      <div class="pages-hero ml-20 resize-t">
+        <h1
+          class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none resize-t dark:text-[white] resize-t">
+          Projects</h1>
+      </div>
+      <div class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
         <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
           <i class="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/ashleeinofre" target="_blank" class="icon">

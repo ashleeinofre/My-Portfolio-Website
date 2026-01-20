@@ -14,9 +14,9 @@
 
 <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
   <!--Main Content Box-->
-  <section id="main-con" class="bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
-    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] max-[1000px]:h-140 max-[1000px]:mt-20 resize-t 
-    dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)]">
+  <section 
+   class="main-con bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+    shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] resize-t dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)] overflow-auto only-thumb">
     <!--Main Content-->
     <div class="relative">
 
@@ -24,7 +24,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <div class="p-10 mt-45 flex items-center justify-center text-center swiper">
+      <div class="in-con-pages p-10 mt-45 flex items-center justify-center text-center swiper">
         <ul class="[&_li]:bg-[#ffffff] [&_li]:dark:bg-[#446C81] [&_li]:border-[#0B0D2A] [&_li]:border-3 [&_h2]:font-semibold [&_h2]:p-2
          [&_h2]:text-[#446C81] swiper-wrapper">
 
@@ -167,8 +167,8 @@
       </div>
     </div>
   </section>
-
-  <section id="hero-icons" class="bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
+  <!-- Title & Icons -->
+  <section class="hero-icons bg-white border-[#0B0D2A] border-[3px] relative mx-15 rounded-[clamp(25px,2.5vw,50px)] bottom-155 
   max-[1000px]:bottom-135 resize-t dark:bg-[#446C81]">
     <div class="flex justify-between items-center p-2">
       <div class="ml-10 flex gap-5">
@@ -179,12 +179,12 @@
           <div id="modal-con" class="flex justify-center p-5 pt-10 resize-t items-center">
             <ul class="button-con flex flex-col gap-3.5">
               <li>
-                <a href="about.html"
-                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
+                <a href="index.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Home</a>
               </li>
               <li>
-                <a href="skills.html"
-                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">My Skills</a>
+                <a href="about.html"
+                  class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">About Me</a>
               </li>
               <li>
                 <a href="projects.html"
@@ -204,18 +204,21 @@
         </div>
 
         <!-- Dark Mode -->
-        <button class="hover:scale-[1.2]" onclick="toggleDarkMode()">
+        <button class="hover:scale-[1.1]" onclick="toggleDarkMode()">
           <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
-            class="w-17 h-auto object-contain p-2 dark:hidden">
-          <img src="./Images/sun.png" alt="Light Mode Button" class="w-17 h-auto object-contain hidden p-2 dark:block">
+            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain p-2 dark:hidden">
+          <img src="./Images/sun.png" alt="Light Mode Button"
+            class="w-[clamp(2.7rem,4vw,4.25rem)] h-auto object-contain hidden p-2 dark:block">
         </button>
       </div>
 
-      <!-- Title & Icons -->
-      <h1
-        class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none ml-20 resize-t dark:text-[white]">
-        MY SKILLS</h1>
-      <div id="icons-con"
+      <!-- Hero -->
+      <div class="pages-hero ml-20 resize-t">
+        <h1
+          class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none resize-t dark:text-[white] resize-t">
+          My Skills</h1>
+      </div>
+      <div
         class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
         <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
           <i class="fa-brands fa-linkedin"></i></a>
