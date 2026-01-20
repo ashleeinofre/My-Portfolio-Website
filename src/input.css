@@ -205,12 +205,12 @@
 
 
   @media screen and (max-width: 1000px) {
-    #main-con {
-      height: 580px;
-    }
+   .main-con {
+    height: 600px;
+   }
 
-    #hero-icons {
-      bottom: 560px;
+    .hero-icons {
+      bottom: 585px;
     }
 
     .dark-light {
@@ -238,14 +238,15 @@
   @media screen and (max-width: 890px) {
 
     /* Landing */
-    #main-con {
+    .main-con {
       margin-top: 35px;
       height: 680px;
     }
 
-    #hero-icons {
+    .hero-icons {
       bottom: 665px;
     }
+    
 
     .in-con {
       margin-top: 60px;
@@ -263,10 +264,12 @@
       margin: 0;
     }
 
+    
     .button {
       padding: 15px;
       width: 250px;
       margin: 3px;
+      border-radius: 20px;
     }
 
     .button-con {
@@ -292,28 +295,27 @@
   @media screen and (max-width: 768px) {
 
     /* Landing */
-    #main-con {
+    .main-con {
       margin-top: 20px;
       height: 700px;
     }
 
-    #hero-icons {
+    .hero-icons {
       bottom: 685px;
     }
 
-    #hero-icons .hero {
+    .hero-icons .hero {
       display: flex;
       margin-left: 25px;
       margin-right: 25px;
       gap: 0;
     }
 
-    #hero-icons .hero h1 {
+    .hero-icons .hero h1 {
       text-align: center;
     }
 
     .in-con {
-      margin-top: 40px;
       padding-bottom: 10px;
     }
 
@@ -343,3 +345,20 @@
       display: inline;
     }
   }
+
+
+ @media screen and (max-width: 425px) {
+  /* Landing */
+  .main-con {
+      height: 650px;
+    }
+
+  .button {
+    border-radius: 18px;
+  }
+
+  .hero-icons {
+    bottom: 635px;
+  }
+ }
+  
