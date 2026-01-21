@@ -16,7 +16,7 @@
     class="main-con bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
     shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] resize-t dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)] overflow-auto only-thumb">
   <!--Main Content-->
-    <ul class="in-con-pages p-4 mt-35 flex felx-col flex-wrap justify-center items-center">
+    <ul class="in-con-projects p-4 mt-30 flex felx-col flex-wrap justify-center items-center">
 
       <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
         border-2 border-[#0B0D2A] mx-6 mt-15 dark:bg-[#446C81] dark:text-white">
@@ -63,7 +63,7 @@
       <li class="project-card relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md 
         border-2 border-[#0B0D2A] mx-6 mt-15 dark:bg-[#446C81] dark:text-white">
         <div class="relative mx-4 -mt-6 overflow-hidden rounded-xl shadow-lg shadow-blue-gray-500/40">
-          <video src="./Videos/testvideo.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
+          <video src="./Videos/FigmaPreview.mp4" loop muted playsinline type="video/mp4" preload="metadata" loading="lazy"
             class="project-video object-fit border-3 border-[#0B0D2A] pointer-events-none"></video>
         </div>
         <div class="p-6">
@@ -91,9 +91,11 @@
       <div class="modal-dark ml-10 flex gap-5 max-[880px]:ml-5">
         <button class="icon text-[#446C81] dark:text-white" id="openmodal">
           <i class="fa-solid fa-list"></i></button>
-        <div class="modal bg-white dark:bg-[#446C81] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
-          <div id="modal-con" class="flex justify-center p-5 pt-10 resize-t items-center">
+        <div class="modal bg-[#BDC7FF] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
+          <div id="modal-con" class="flex justify-center px-10 pb-10 resize-t items-center max-[600px]:px-5 max-[600px]:pb-5">
             <ul class="button-con flex flex-col gap-3.5">
+              <button id="closemodal"
+              class="self-end text-3xl text-[#0B0D2A] hover:scale-[1.1] max-[600px]:text-[18px] max-[600px]:m-2">x</button>
               <li>
                 <a href="index.html"
                   class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Home</a>
@@ -114,8 +116,6 @@
                 </a>
               </li>
             </ul>
-            <button id="closemodal"
-              class="relative bottom-60 text-3xl text-[#0B0D2A] hover:scale-[1.1] dark:text-white">x</button>
           </div>
         </div>
         <!-- Dark Mode -->

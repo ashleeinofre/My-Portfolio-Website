@@ -15,8 +15,15 @@ function closeModal() {
 }
 
 document.querySelectorAll("#modal a").forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    // Resume button needs second tap
+    if (link.closest("#resume-btn") && link.dataset.armed === "false") {
+      e.preventDefault();
+      return;
+    }
+
     closeModal();
   });
 });
+
 

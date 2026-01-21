@@ -21,47 +21,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    if (innerWidth > 768) return;
+  if (innerWidth > 768) return;
 
-    const btn = document.getElementById("resume-btn");
-    if (!btn) return;
+  const btn = document.getElementById("resume-btn");
+  if (!btn) return;
 
-    const a = btn.querySelector("a");
-    const d = btn.querySelector(".default-resume");
-    const h = btn.querySelector(".hover-resume");
-    const href = a.getAttribute("href");
+  const a = btn.querySelector("a");
+  const d = btn.querySelector(".default-resume");
+  const h = btn.querySelector(".hover-resume");
+  const href = a.getAttribute("href");
 
-    let active = false, t;
+  let active = false, t;
+
+  a.removeAttribute("href");
+  a.removeAttribute("download");
+  a.dataset.armed = "false";
+
+  a.onclick = function (e) {
+    if (a.dataset.armed === "false") {
+      e.preventDefault();
+
+      a.dataset.armed = "true";
+      active = true;
+
+      d.style.display = "none";
+      h.style.display = "inline";
+
+      a.setAttribute("href", href);
+      a.setAttribute("download", "");
+
+      t = setTimeout(() => reset(), 2500);
+    }
+  };
+
+  function reset() {
+    a.dataset.armed = "false";
+    active = false;
+
+    h.style.display = "none";
+    d.style.display = "inline";
 
     a.removeAttribute("href");
     a.removeAttribute("download");
-
-    a.onclick = function (e) {
-      if (!active) {
-        e.preventDefault();
-        active = true;
-
-        d.style.display = "none";
-        h.style.display = "inline";
-        a.setAttribute("href", href);
-        a.setAttribute("download", "");
-
-        t = setTimeout(function () {
-          active = false;
-          h.style.display = "none";
-          d.style.display = "inline";
-          a.removeAttribute("href");
-          a.removeAttribute("download");
-        }, 2500);
-      } else {
-        clearTimeout(t);
-        setTimeout(function () {
-          active = false;
-          h.style.display = "none";
-          d.style.display = "inline";
-          a.removeAttribute("href");
-          a.removeAttribute("download");
-        }, 300);
-      }
-    };
-  });
+  }
+});

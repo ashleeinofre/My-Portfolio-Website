@@ -14,8 +14,8 @@
 
 <body class="outfit m-0 p-0 h-full overflow-hidden dark:bg-[#0B0D2A]">
   <!--Main Content Box-->
-  <section 
-   class="main-con bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
+  <section
+    class="main-con bg-[#BDC7FF] border-[#0B0D2A] border-3 mx-25 mt-12 rounded-[40px] h-160 z-[-1] 
     shadow-[0_0_10px_15px_rgba(0,0,0,0.25)] resize-t dark:shadow-[0_0_10px_15px_rgba(255,255,255,0.25)] overflow-auto only-thumb">
     <!--Main Content-->
     <div class="relative">
@@ -24,16 +24,21 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <div class="in-con-pages p-10 mt-45 flex items-center justify-center text-center swiper">
+      <div class="p-10 mt-45 flex items-center justify-center text-center swiper">
         <ul class="[&_li]:bg-[#ffffff] [&_li]:dark:bg-[#446C81] [&_li]:border-[#0B0D2A] [&_li]:border-3 [&_h2]:font-semibold [&_h2]:p-2
          [&_h2]:text-[#446C81] swiper-wrapper">
 
-          <li class="p-5 rounded-[10px] w-90 swiper-slide">
+          <li class="p-5 rounded-[10px] w-90 overflow-hidden swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-html5-plain colored text-[200px]"></i>
                 <h2 class="text-3xl cubic-t">HTML5</h2>
-                <p id="see-more" class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden text-white">See Less</span>
+                </p>
+
+
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -47,10 +52,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-css3-plain colored text-[200px]"></i>
                 <h2 class="text-3xl">CSS3</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -64,10 +72,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-tailwindcss-original colored text-[200px]"></i>
-                <h2 class="text-3xl">Tailwind CSS</h2>
-                <p class="hidden">See More</p>
+                <h2 class="text-3xl">Tailwind</h2>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -81,10 +92,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-javascript-plain colored text-[200px]"></i>
                 <h2 class="text-3xl">JavaScript</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -98,10 +112,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-php-plain colored text-[200px]"></i>
                 <h2 class="text-3xl">PHP</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -115,10 +132,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-mysql-original colored text-[200px]"></i>
                 <h2 class="text-3xl">MySql</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -132,10 +152,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-figma-plain colored text-[200px]"></i>
                 <h2 class="text-3xl">Figma</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -149,10 +172,13 @@
 
           <li class="p-5 rounded-[10px] w-90 swiper-slide">
             <div class="bg-white p-10 rounded-[10px] shadow-[0_0_5px_5px_rgba(0,0,0,0.25)] s-card cubic-t">
-              <div>
+              <div class="skill-devicon">
                 <i class="devicon-framermotion-original colored text-[200px]"></i>
                 <h2 class="text-3xl">Framer</h2>
-                <p class="hidden">See More</p>
+                <p class="skill-more relative z-50 max-[890px]:block hidden cursor-pointer underline text-sm mt-3">
+                  <span class="see-more">See More</span>
+                  <span class="see-less hidden">See Less</span>
+                </p>
               </div>
               <div
                 class="card-content absolute inset-0 p-10 cubic-t bg-[#446C81] dark:bg-[#0B0D2A] text-center text-white">
@@ -175,9 +201,12 @@
       <div class="modal-dark ml-10 flex gap-5 max-[880px]:ml-5">
         <button class="icon text-[#446C81] dark:text-white" id="openmodal">
           <i class="fa-solid fa-list"></i></button>
-        <div class="modal bg-white dark:bg-[#446C81] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)]" id="modal">
-          <div id="modal-con" class="flex justify-center p-5 pt-10 resize-t items-center">
+        <div class="modal bg-[#BDC7FF] shadow-[0_0_8px_8px_rgba(0,0,0,0.25)] z-10" id="modal">
+          <div id="modal-con"
+            class="flex justify-center px-10 pb-10 resize-t items-center max-[600px]:px-5 max-[600px]:pb-5">
             <ul class="button-con flex flex-col gap-3.5">
+              <button id="closemodal"
+                class="self-end text-3xl text-[#0B0D2A] hover:scale-[1.1] max-[600px]:text-[18px] max-[600px]:m-2">x</button>
               <li>
                 <a href="index.html"
                   class="button text-[#446C81] bg-white resize-t dark:bg-[#446C81] dark:text-[white]">Home</a>
@@ -198,21 +227,20 @@
                 </a>
               </li>
             </ul>
-            <button id="closemodal"
-              class="relative bottom-60 text-3xl text-[#0B0D2A] hover:scale-[1.1] dark:text-white">x</button>
           </div>
         </div>
         <!-- Dark Mode -->
         <button class="dark-light-pages hover:scale-[1.2] resize-t" onclick="toggleDarkMode()">
-        <img src="./Images/crescent-moon.png" alt="Dark Mode Button" class="w-12 h-auto object-contain m-2 dark:hidden">
-        <img src="./Images/sun.png" alt="Light Mode Button" class="w-12 h-auto object-contain m-2 hidden dark:block">
-      </button>
+          <img src="./Images/crescent-moon.png" alt="Dark Mode Button"
+            class="w-12 h-auto object-contain m-2 dark:hidden">
+          <img src="./Images/sun.png" alt="Light Mode Button" class="w-12 h-auto object-contain m-2 hidden dark:block">
+        </button>
       </div>
       <!-- Hero -->
       <div class="pages-hero ml-20 resize-t">
         <h1
           class=" text-[#446C81] font-black text-[clamp(1.2rem,4.5vw,6rem)] whitespace-nowrap leading-none resize-t dark:text-[white] resize-t">
-          ABOUT ME</h1>
+          MY SKILLS</h1>
       </div>
       <div class="mr-10 ml-2 flex text-center items-center resize-t [&_a]:text-[#446C81] dark:[&_a]:text-[white]">
         <a href="https://www.linkedin.com/in/nicoley-ashlee-inofre-6b59a7373/" target="_blank" class="icon">
