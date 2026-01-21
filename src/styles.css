@@ -949,9 +949,6 @@
   .s-card.active .card-content {
     transform: translateY(0);
   }
-  .s-card:not(.active) .card-content {
-    transform: translateY(100%);
-  }
   .modal {
     position: fixed;
     border-radius: 30px;
@@ -1076,6 +1073,9 @@
   }
   .pages-hero {
     margin-left: 20px;
+  }
+  .s-card:not(.active) .card-content {
+    transform: translateY(100%);
   }
 }
 @media screen and (max-width: 768px) {

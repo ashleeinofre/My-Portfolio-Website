@@ -126,9 +126,6 @@
       transform: translateY(0);
     }
 
-    .s-card:not(.active) .card-content {
-      transform: translateY(100%);
-    }
 
     .modal {
       position: fixed;
@@ -304,6 +301,10 @@
 
     .pages-hero {
       margin-left: 20px;
+    }
+
+    .s-card:not(.active) .card-content {
+      transform: translateY(100%);
     }
   }
 

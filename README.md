@@ -4,7 +4,11 @@ Final Portfolio Website Design
 This Website is created using HTML5, Tailwind CSS + custom styles(CSS3), & JavaScript.  
 Illustration is drawn and designed by Ashlee Inofre.  
 
+Live Demo : [Link Text](https://ashleeinofre.github.io/My-Portfolio-Website/)    
+  
 ![alt text](/Images/image.png)
+
+
 
 Icons are from: Devicon & Font-Awesome  
 Fonts are from: Google Fonts  
